@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="portfolio.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Ritu Sarswat - Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="leftHeader">
+                <img id="myself" src="WhatsApp Image 2025-02-01 at 13.08.59_8b772c98.jpg" alt="myself">
+             <span id="name">RITU SARSWAT</span>
+            </div>
+            <div class="rightHeader">
+              <nav class="navigation">
+                <a href="" class="nav">Home</a>
+                <a href="#content" class="nav">About</a>
+                <a href="#achievements" class="nav">Certificates</a>
+                <a href="#projects-section"class=nav>Projects</a>
+                <a href="#contact" class="nav">Contact</a>
+              </nav>
+            </div>
+        </div>
+        <div id="content">
+            <div class="aboutMe">
+                <p>HI,My name is <span id="highlight">Ritu Sarswat</span> and I am a passionate <span id="element"></span></p>
+                <button class="btn" id="btn1">Download Resume</button>
+                <a id="downloadLink" href="ritu_resume.pdf" download="resume.pdf" style="display:none;"></a>
+
+                <a href="https://github.com/ritusarswat27" target="_blank">
+                    <button class="btn" id="btn2">Visit GitHub</button>
+                </a>
+            
+            </div>
+            <div class="picture">
+                <img id="developer" src="PngItem_1127587.png" alt="DEVELOPER">
+            </div>
+        </div>
+
+        <hr>
+
+        <h3 class="heading">Skills <img style="height:30px, widht=25px" src="skill-32.png" alt="SKILLS"></h3>
+        <div class="skillsList">
+        <span class="skills" id="skills1">HTML</span>
+        <span class="skills" id="skills2">CSS</span>
+        <span class="skills" id="skills3">JavaScript</span>
+        <span class="skills" id="skills4">BootStrap</span>
+        <span class="skills" id="skills5">C</span>
+        <span class="skills" id="skills6">C++</span>
+        </div>
+
+        <hr>
+
+        <div id="achievements">
+            <h3 class="heading">Certificate and Achievements</h3>
+            <ul class="certificate-list">
+                <a class="certificate" href="https://www.linkedin.com/learning/certificates/1a481f642bc26700348284ca53fb0bbd2d9ced2711b738f0185353bc11d4f812" target="_blank"><li  id="Certificate1">Completed CyberSecurity Foundation by LinkedIn</li></a>
+
+                <a class="certificate" href="https://lnkd.in/gmJHJgzP"target="_blank"><li  id="Certificate2">Completed Career Essentials in Generative AI by Microsft and LinkedIn</li></a>
+
+                <a class="certificate" href="https://www.linkedin.com/learning/certificates/2c1e37ba7a4ab6bd54b73e9de5c41cddb148884c39d7a09b7b3b858f1d458b51" target="_blank"><li id="Certificate3">Completed The CyberSecurity Threat LandScape</li></a>
+
+            </ul>
+        </div>
+
+        <hr>
+
+        <div id="projects-section">
+            <h3 class="heading">Projects</h3>
+            <dl class="projects-list">
+                <a href=""><dt class=" project" id="project1">1. Online Study Website</dt></a>
+                    <dd class="language-detail">Language Ued - HTML, CSS</dd>
+
+                    <dt  class="project" id="project2">2. Tic-Tac-Toe Game</dt>
+                    <dd class="language-detail"> Language Used - HTML, CSS, JavaScript</dd>
+
+                    <dt class= "project" id="project3">3. Stone-Paper-Scissor Game</dt>
+                    <dd class="language-detail">Language Used - HTML, CSS, JavaScript</dd>
+            </dl>
+        </div>
+
+        <hr>
+
+        <div>
+            <h3 class="heading">Contact</h3>
+            <div id="contact">
+            <a  class= "contact-us" href="https://www.linkedin.com/in/ritu-sarswat-78a69b2b1/ " target="_blank"><img class="image" src="linkedin.png" alt="LinkedIn"></a>
+
+            <a class= "contact-us" href="https://leetcode.com/u/ritusarswat27/" target="_blank"><img class="image" src="leetcode.svg" alt="LeetCode"></a>
+
+            <a class= "contact-us" href="https://github.com/ritusarswat27" target="_blank"><img class="image" src="GitHub-Transparent-PNG.png" alt="Github"></a>
+
+            <a  class="contact-us" href="https://www.geeksforgeeks.org/user/ritusarsu3wu/" target="_blank"><img class="image" src="icons8-geeksforgeeks-48.png" alt="GeeksForGeeks"></a>
+
+            <a  class="contact-us" href="https://www.naukri.com/code360/profile/0b025ccf-deae-4266-b9de-a3d143d447d4" target="_blank"><img class="image" src="idWFV0KNts_logos.png" alt="Coding Ninjas"></a>
+            </div>
+
+                <div class="footer_copyright">
+                    <p id="highlight"><i>Ritu Sarswat</i></p>
+                   <p>&#169 2022 -All rights are reserved.</p>
+               </div>
+         
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web Developer</i>', '<i>Frontend Developer</i>','<i>Web Designer</i>.'],
+          typeSpeed: 50,
+        });
+    
+        const downloadBtn = document.getElementById('btn1');
+        const downloadLink = document.getElementById('downloadLink');
+
+        downloadBtn.addEventListener('click', function() {
+            
+            downloadLink.click();
+        });
+
+      </script>
+</body>
+</html>

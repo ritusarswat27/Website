@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;     
+}
+.container{
+    background-color: rgb(29, 53, 87);
+    width: 100vw;
+    height: 100%;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0; 
+}
+.header{
+    background-color: rgb(69, 123, 157);
+    height:80px;
+    width:100vw;
+}
+.leftHeader{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.rightHeader{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    top: -45px;
+}
+.nav{
+    text-decoration: none;
+    color:white;
+    padding:12px;
+    font-size: 20px;
+    margin-right: 15px;
+} 
+#name{
+    color:rgb(168, 218, 220);
+    font-size: 30px;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    padding-left:8px;
+}
+#developer{
+    height:320px;
+    width:330px;
+    margin-top:60px;
+    margin-right: 150px;
+}
+#content{
+    display: flex;
+    justify-content: space-around;
+    /* animation: slidefromleft 1s ease forwards;
+    opacity: 0;  */
+}
+.aboutMe{
+    width:35%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top:150px;
+    color: white;
+}
+#highlight ,#element{
+    color:rgb(194, 96, 206);
+}
+.btn{
+    padding:7px;
+    background-color:#3cacae;
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    border: none;
+    margin-right: 18px;
+    margin-top:20px
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: burlywood;
+}
+@keyframes slidefromleft{
+
+    0% {
+        opacity:0;
+        transform:translateX(-100%);
+    }
+    100% {
+        opacity:1;
+        transform:translateX(0);
+    }
+} 
+hr{
+    margin-top: 30px;
+    border: 1.5px solid white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-size:40px;
+    color: black;
+}
+.skillsList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills{
+    margin:20px 10px 20px 10px;
+    font-size:25px;
+    display: inline;
+    color: white;
+}
+.certificate-list{
+    margin:20px;
+    padding:10px;
+    color: white;
+    gap:20px;
+}
+.certificate{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: cursive;
+    padding:15px;
+    color: white;
+}
+#projects-section{
+    padding:20px;
+}
+.language-detail{
+     padding:5px;
+     font-size:20px;
+     font-family: cursive;
+     color: white;
+     padding:7px 0px 20px 0px;
+}
+.project{
+    font-size:27px;
+    font-weight: 500;
+    color:rgb(108, 190, 237);
+}
+.image{
+    height:70px;
+    width:70px;
+    padding:10px;
+    padding-left:20px;
+}
+#contact{
+    display: flex;
+    justify-content: center;  
+}
+.footer_copyright{
+    color: white;
+    padding:30px;
+    font-size: 20px;;
+}
+#myself{
+    height:60px;
+    width:70px;
+    border-radius: 100%;
+}
